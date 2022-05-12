@@ -4,7 +4,7 @@ from checker import check_correct_admin_password, name_checker, cost_checker, qu
 from .AdminForm import AdminForm
 from .DishForm import DishForm
 from .OrderForm import OrderForm
-from constants import CONSOLETEXT, TYPE_OF_FOOD, VALUE
+from constants import TYPE_OF_FOOD, VALUE
 import os
 import pandas as pd
 from .Dish import Dish
@@ -34,9 +34,6 @@ class MainForm:
         self.window.mainloop()
 
     def create_console(self, text=""):
-        create_label(font_color='#000000',
-                     text=CONSOLETEXT, position=[430, 175], font="Sedan 14", background="#996600")
-
         label = tk.Label(
             text=text,
             font="Sedan 14",
