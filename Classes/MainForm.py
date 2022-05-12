@@ -236,17 +236,17 @@ class MainForm:
         if not self.dish_auth_active:
             self.create_console('Создана форма добавления блюда')
             self.active_elements['dish_auth_label'] = create_label(font_color="#000000", text="Выберите тип блюда:",
-                                                                   position=[300, 140], background="#996600", font="Sedan 14")
+                                                                   position=[300, 180], background="#996600", font="Sedan 14")
             self.active_elements['combo_dish_auth_type_of_dish'] = create_combo_box(width=12, font_color="#000000",
-                                                                                    position=[500, 140], values=TYPE_OF_FOOD,
+                                                                                    position=[500, 180], values=TYPE_OF_FOOD,
                                                                                     default=None, callback=self.create_chose_dish,
                                                                                     font="Sedan 14")
             self.active_elements['dish_auth_label_2'] = create_label(font_color="#000000", text="Выберите блюдо",
-                                                                     position=[675, 140], background="#996600", font="Sedan 14")
-            self.active_elements['combo_dish_auth_who'] = create_combo_box(width=12, font_color="#000000", position=[875, 140],
+                                                                     position=[675, 180], background="#996600", font="Sedan 14")
+            self.active_elements['combo_dish_auth_who'] = create_combo_box(width=12, font_color="#000000", position=[875, 180],
                                                                            values=[dish.get_name() for dish in self.now_dishes],
                                                                            default=None, font="Sedan 14")
-            self.active_elements['dish_success'] = create_button(font_color='#ffffff', text="Выполнить", command=self.enter_dish_menu, position=[1050, 140],
+            self.active_elements['dish_success'] = create_button(font_color='#ffffff', text="Выполнить", command=self.enter_dish_menu, position=[1050, 180],
                                                                  background='#996633', width='13', height='1', font="Sedan 12")
 
             self.dish_auth_active = True
