@@ -13,7 +13,7 @@ class OrderForm:
     def show_main_screen(self):
         self.MainForm.active_elements['dish_help_label'] = create_label(font_color="#000000",
                                                                           text=f"Количество заказов в ресторане сейчас: {str(len(self.MainForm.order))}",
-                                                                          position=[400, 80], background="#996600",
+                                                                          position=[350, 0], background="#996600",
                                                                           font="Sedan 14")
         self.MainForm.active_elements['chose_what_do'] = create_label(font_color="#000000",
                                                                       text=f"Выберите действие:",
