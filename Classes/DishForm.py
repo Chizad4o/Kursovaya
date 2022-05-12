@@ -11,29 +11,25 @@ class DishForm:
 
     def show_main_screen(self):
         self.MainForm.destroy_all()
-        self.MainForm.active_elements['dish_label'] = create_label(font_color = "#000000",
-                                                                     text="Вы находитесь на панели блюда",
-                                                                     position=[400, 40], background = "#996600",
-        font = "Sedan 14")
         self.MainForm.active_elements['dish_name_label'] = create_label(font_color = "#000000",
                                                                           text=f"Название блюда: {self.dish.name}",
-                                                                          position=[20, 250], background = "#996600",
+                                                                          position=[500, 40], background = "#996600",
         font = "Sedan 14")
         self.MainForm.active_elements['type_of_dish_label'] = create_label(font_color = "#000000",
                                                                              text=f"Тип блюда: {self.dish.type_of_food}",
-                                                                             position=[20, 300], background = "#996600",
+                                                                             position=[500, 80], background = "#996600",
         font = "Sedan 14")
         self.MainForm.active_elements['dish_quantity_label'] = create_label(font_color = "#000000",
                                                                                     text=f"Количество: {self.dish.quantity} шт.",
-                                                                                    position=[20, 350], background = "#996600",
+                                                                                    position=[850, 40], background = "#996600",
         font = "Sedan 14")
         self.MainForm.active_elements['dish_weight_label'] = create_label(font_color = "#000000",
                                                                           text=f"Вес порции: {self.dish.weight}г",
-                                                                          position=[20, 400], background = "#996600",
+                                                                          position=[850, 80], background = "#996600",
         font = "Sedan 14")
         self.MainForm.active_elements['dish_cost_label'] = create_label(font_color = "#000000",
                                                                          text=f"Цена: {self.dish.cost}₽",
-                                                                         position=[20, 450], background = "#996600",
+                                                                         position=[675, 120], background = "#996600",
         font = "Sedan 14")
 
         self.show_que_flag = False
