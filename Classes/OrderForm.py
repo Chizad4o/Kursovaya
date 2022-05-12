@@ -7,8 +7,7 @@ from .Order import Order
 class OrderForm:
     def __init__(self, main):
         self.MainForm = main
-        self.MainForm.window.title("Ресторан (администратор)")
-        self.MainForm.create_console('Переход на панель администратора')
+        self.MainForm.window.title("Ресторан (Заказы)")
         self.show_main_screen()
 
     def show_main_screen(self):
