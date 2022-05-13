@@ -1,7 +1,7 @@
-import tkinter as tk
+import tkinter as tk                #импортируем библиотеку для создания активных клавиш, окон вывода
 from tkinter import ttk
 
-def create_button(width, height, font, background, font_color, text, command, position):
+def create_button(width, height, font, background, font_color, text, command, position):       #метод создает кнопку
     btn = tk.Button(
         text=text,
         background=background,
@@ -15,7 +15,7 @@ def create_button(width, height, font, background, font_color, text, command, po
     return btn
 
 
-def create_label(font, font_color, text, position, background):
+def create_label(font, font_color, text, position, background):         #метод создает лейбл
     label = tk.Label(
         text=text,
         font=font,
@@ -26,7 +26,7 @@ def create_label(font, font_color, text, position, background):
     label.place(x=position[0], y=position[1])
     return label
 
-def create_entry(width, font, font_color, position):
+def create_entry(width, font, font_color, position):                #метод создает поле с вводом
     entry = tk.Entry(
         width=width,
         font=font,
@@ -36,7 +36,7 @@ def create_entry(width, font, font_color, position):
     return entry
 
 
-def create_combo_box(width, font, font_color, position, values, default=0, callback=None):
+def create_combo_box(width, font, font_color, position, values, default=0, callback=None):      #метод создает поле с выбором
     combo = ttk.Combobox(
         width=width,
         font=font,
